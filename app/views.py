@@ -1,6 +1,9 @@
 from app import app
 from flask import render_template, request, redirect, url_for, flash
+import datetime
 
+today = datetime.datetime.now() # today's date
+# date_joined = datetime.date(2019, 2, 7) # a specific date
 
 ###
 # Routing for your application.
@@ -17,6 +20,15 @@ def about():
     """Render the website's about page."""
     return render_template('about.html', name="Mary Jane")
 
+
+
+def format_date_joined(date):
+    return date.strftime("%B, %Y")
+
+
+@app.route('/profile')
+def profile():
+    return render_template('profile.html', date=format_date_joined(today))
 
 ###
 # The functions below should be applicable to all Flask apps.

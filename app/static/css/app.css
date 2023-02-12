@@ -1,3 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
 body {
     padding-top: 5rem;
+    font-family: "Didact Gothic";
+}
+
+.top {
+    color: white;
+    background-color: green;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.profileimg {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.displayname {
+    font-weight: bond;
+    font-size: 40px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.bottom {    
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-wrap {
+    width: 3.7in;
+    text-align: center;
+}
+
+.stats {    
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    width: 100px;
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 5px;
 }

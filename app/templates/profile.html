@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    
+    <div class="top">
+        <img class="profileimg" src="{{ url_for('static', filename='profile-pic.jpg') }}">
+        <p class="displayname">Mary Jane</p>
+        <p class="username">@mjane</p>
+        <p class="location">Kingston, Jamaica</p>
+        <p class="date">Joined {{ date }}</p>
+    </div>
+
+    <div class="bottom">
+        <div class="bio-wrap">
+            <p class="bio">
+                I am a smart and talented young woman who loves website
+                design and development. Contact me if you'd like to work 
+                together on a new project.
+            </p>
+        </div>
+
+        <div class="stats">
+            <div class="stat" id="posts">
+                <p>7</p>
+                <p>Posts</p>
+            </div>
+
+            <div class="stat" id="following">
+                <p>100</p>
+                <p>Following</p>
+            </div>
+
+            <div class="stat" id="followers">
+                <p>250</p>
+                <p>Followers</p>
+            </div>
+        </div>
+
+        <div class="button-wrap">
+            <button class="follow-button" type="button">Follow</button>
+        </div>
+    </div>
+
+{% endblock %}
